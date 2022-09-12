@@ -1,6 +1,6 @@
 
 class Usuarios():
-    def __init__(self,nombre,apellido,dni):
+    def __init__(self,nombre,apellido,dni,intentosDeLogin):
         self.nombre = nombre
         self.apellido = apellido
         self.dni = dni
@@ -12,6 +12,9 @@ class Usuarios():
 
     def bienvenidaUsuario(self):
         print('Bienvenido ' + self.nombre)
+    
+        
+
 
 class Auto():
     def __init__(self,marca,modelo,anio):
@@ -28,10 +31,10 @@ class Auto():
         
     def actualizar_kilometraje(self, km):
         self.kilometraje = km
-
-
-
     
+    def incrementar_kilometraje(self,km):
+        self.kilometraje += km
+
 
 def testUsuarios():
     usuario = Usuarios('Ramiro','Castro','38826235')
@@ -47,6 +50,8 @@ def testAutos():
     autoA.descripcionDeAuto()
     autoB.descripcionDeAuto()
     autoA.actualizar_kilometraje(23)
+    autoA.descripcionDeAuto()
+    autoA.incrementar_kilometraje(20)
     autoA.descripcionDeAuto()
 
 
