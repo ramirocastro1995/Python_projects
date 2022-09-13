@@ -24,13 +24,13 @@ def login():
         intentoLogin += 1
     
     usuarioA = Usuario(nombreUsuario,apellidoUsuario,dniUsuario,intentoLogin)
+    
 
 
 
 def testUsuario():
-    usuarioTest = Usuario('Ramiro','Castro','38826235',0)
+    usuarioTest = Usuario('Ramiro','Castro','38826235')
     print(usuarioTest.nombre)
     
-
-
 testUsuario()
+login()
