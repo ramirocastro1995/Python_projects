@@ -36,6 +36,29 @@ def append():
         archivoObjeto.write('hola')
         archivoObjeto.write('chau')
 
+#try/
+def tryTest():
+    while True:
+        print('Ingrese dos numero,para dividir,para salir ingrese q')
+        print('Ingrese el primer numero')
+        primerNumero = input()
+        print('Ingrese el segundo numero')
+        segundoNumero = input()
+        if primerNumero == 'q':
+            break
+        if segundoNumero == 'q':
+            break
+        try:
+            respuesta = int(primerNumero) / int(segundoNumero)
+        except ZeroDivisionError:
+            print('Error,no se puede dividir por cero')
+        else:
+            print(respuesta)
+
+    
+
+tryTest()
+
 append()
 
 buscarCumpleañosPI()
