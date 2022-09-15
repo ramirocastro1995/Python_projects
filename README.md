@@ -1,1 +1,1 @@
-# Python_projects
+Various projects with Python from the python crash course book
