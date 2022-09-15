@@ -1,5 +1,7 @@
-def main():
-    nombreDeArchivo = 'prueba.txt'
+nombreDeArchivo = 'prueba.txt'
+
+def buscarCumpleañosPI():
+    
 
     with open(nombreDeArchivo) as texto:
         lineas = texto.readlines()
@@ -22,13 +24,21 @@ def main():
 
 
 def getCumpleanios():
-    print('ingresa tu cumpleaños: ')
+    print('Ingresa tu cumpleaños con el siguiente formato: 951995')
     cumpleanios = input()
     return cumpleanios
 
 
-main()
 
+#appending to a file
+def append():
+    with open(nombreDeArchivo,"a")as archivoObjeto:
+        archivoObjeto.write('hola')
+        archivoObjeto.write('chau')
+
+append()
+
+buscarCumpleañosPI()
 
 
 
